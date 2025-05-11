@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, StyleSheet } from "react-native";
-import { auth, db } from "./firebaseConfig";
+import { auth } from "../services/FirebaseConfig"; // Use the centralized auth object
 import { doc, getDoc } from "firebase/firestore";
 
 const Profile = () => {

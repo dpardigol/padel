@@ -1,4 +1,4 @@
-import { auth, db } from "./firebaseConfig";
+import { auth, db } from "./FirebaseConfig";
 import { doc, getDoc, setDoc, updateDoc, arrayUnion, arrayRemove } from "firebase/firestore";
 
 // Fetch user data

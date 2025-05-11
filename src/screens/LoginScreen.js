@@ -7,12 +7,13 @@ export default function LoginScreen({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  // Handle user login
   const handleLogin = async () => {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
       console.log("User logged in:", user);
-      navigation.navigate("Home");
+      navigation.navigate("Home"); // Navigate to Home Screen
     } catch (error) {
       console.error("Login failed:", error.message);
       alert("Login failed. Please check your email and password.");

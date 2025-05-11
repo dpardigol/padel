@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, TextInput, Button, FlatList, StyleSheet } from "react-native";
 import { collection, addDoc, query, onSnapshot, orderBy } from "firebase/firestore";
-import { db, auth } from "./firebaseConfig";
+import { db, auth } from "../services/FirebaseConfig";
 
 const Chat = ({ friendId }) => {
   const [messages, setMessages] = useState([]);
